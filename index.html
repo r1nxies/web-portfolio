@@ -60,6 +60,17 @@ nav a.cta{color:var(--fg);border-bottom:2px solid var(--accent)}
 /* about */
 .about .grid{display:grid;gap:32px;grid-template-columns:1fr}
 @media (min-width:820px){.about .grid{grid-template-columns:5fr 7fr;gap:64px}}
+/* achievements */
+.achievement-grid{display:grid;gap:16px;grid-template-columns:1fr}
+@media (min-width:820px){.achievement-grid{grid-template-columns:repeat(3,1fr);gap:20px}}
+.achievement-panel{min-height:260px;padding:24px;border:2px solid var(--fg);border-radius:14px;display:flex;flex-direction:column;justify-content:space-between}
+.achievement-panel:nth-child(1){background:var(--accent);color:#0A0A0A;border-color:var(--accent)}
+.achievement-panel:nth-child(2){background:#0A0A0A;color:#F5EBE6}
+.achievement-panel:nth-child(3){background:var(--surface)}
+.achievement-number{font:800 2.5rem/1 var(--head);color:var(--accent)}
+.achievement-panel:nth-child(1) .achievement-number{color:#0A0A0A}
+.achievement-panel h3{font-size:1.3rem}
+.achievement-panel p{margin:10px 0 0;font-size:.95rem;color:inherit;opacity:.78}
 /* services */
 .services{border-top:1px solid var(--line)}
 .svc{display:grid;gap:6px 40px;padding:26px 0;border-top:1px solid var(--line);grid-template-columns:1fr}
@@ -113,7 +124,7 @@ footer span.tg{color:#B9B0AA}
   <div class="wrap bar">
     <a class="brand" href="#top" aria-label="ACreates home"><span class="mark" aria-hidden="true">AC</span>ACreates</a>
     <nav aria-label="Main">
-      <a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a class="cta" href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#achievements">Achievements</a><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a class="cta" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -139,6 +150,17 @@ footer span.tg{color:#B9B0AA}
       <p>I'm a student-age creator who works with new businesses, local shops, startups and freelancers who need to look professional online but have limited time and budget.</p>
       <p>I build your brand kit in Canva, set up your Google Business Profile, fix the SEO basics on your website and plan 30 days of content. I also have hackathon experience building and presenting under tight deadlines.</p>
       <p class="muted">Currently 4th Year Student, Eastern Visayas State University</p>
+    </div>
+  </div>
+</section>
+
+<section class="achievements" id="achievements">
+  <div class="wrap">
+    <div class="sec-head"><h2>Achievements</h2><p class="muted">Milestones that shape how I work.</p></div>
+    <div class="achievement-grid">
+      <article class="achievement-panel"><span class="achievement-number">01</span><div><h3>Hackathon experience</h3><p>Built and presented under tight deadlines, turning ideas into clear, usable concepts.</p></div></article>
+      <article class="achievement-panel"><span class="achievement-number">02</span><div><h3>4th year student</h3><p>Continuing to sharpen my design, communication and problem-solving skills at Eastern Visayas State University.</p></div></article>
+      <article class="achievement-panel"><span class="achievement-number">03</span><div><h3>Portfolio in progress</h3><p>Creating practical brand, content and visibility samples to show my process and range.</p></div></article>
     </div>
   </div>
 </section>
