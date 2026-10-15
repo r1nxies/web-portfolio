@@ -64,8 +64,7 @@ nav a.cta{color:var(--fg);border-bottom:2px solid var(--accent)}
 .achievement-grid{display:grid;gap:16px;grid-template-columns:1fr}
 @media (min-width:820px){.achievement-grid{grid-template-columns:repeat(3,1fr);gap:20px}}
 .achievement-panel{min-height:260px;padding:24px;border:2px solid var(--fg);border-radius:14px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
-.achievement-image-link{display:block;margin:0 auto 20px;width:100%;border-radius:8px}
-.achievement-image{display:block;width:100%;height:170px;object-fit:contain;object-position:center;border-radius:8px;background:rgba(0,0,0,.12);transition:transform .25s ease;transform-origin:center}
+.achievement-image{display:block;width:100%;height:170px;object-fit:contain;object-position:center;margin:0 auto 20px;border-radius:8px;background:rgba(0,0,0,.12);transition:transform .25s ease;transform-origin:center}
 .achievement-image:hover{transform:scale(1.2)}
 @media (prefers-reduced-motion:reduce){.achievement-image{transition:none}}
 .achievement-panel:nth-child(1){background:var(--accent);color:#0A0A0A;border-color:var(--accent)}
@@ -162,8 +161,8 @@ footer span.tg{color:#B9B0AA}
   <div class="wrap">
     <div class="sec-head"><h2>Achievements</h2><p class="muted">Milestones that shape how I work.</p></div>
     <div class="achievement-grid">
-      <article class="achievement-panel"><a class="achievement-image-link" href="rscene-achievement.png" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;"><img class="achievement-image" src="rscene-achievement.png" alt="RScene team receiving a second-place hackathon award"></a><span class="achievement-number">01</span><div><h3>RScene hackathon</h3><p>Placed 2nd out of 11 teams with the RScene team.</p></div></article>
-      <article class="achievement-panel"><a class="achievement-image-link" href="byteforward-achievement.jpg" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;"><img class="achievement-image" src="byteforward-achievement.jpg" alt="Byte Forward and PCCI competition award ceremony"></a><span class="achievement-number">02</span><div><h3>Byte Forward x PCCI</h3><p>Placed 3rd out of 12 teams in last year's Byte Forward competition with PCCI.</p></div></article>
+      <article class="achievement-panel"><img class="achievement-image" src="rscene-achievement.png" alt="RScene team receiving a second-place hackathon award"><span class="achievement-number">01</span><div><h3>RScene hackathon</h3><p>Placed 2nd out of 11 teams with the RScene team.</p></div></article>
+      <article class="achievement-panel"><img class="achievement-image" src="byteforward-achievement.jpg" alt="Byte Forward and PCCI competition award ceremony"><span class="achievement-number">02</span><div><h3>Byte Forward x PCCI</h3><p>Placed 3rd out of 12 teams in last year's Byte Forward competition with PCCI.</p></div></article>
       <article class="achievement-panel"><span class="achievement-number">03</span><div><h3>4th year student</h3><p>Continuing to sharpen my design, communication and problem-solving skills at Eastern Visayas State University.</p></div></article>
     </div>
   </div>
