@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ACreates | Brand + Visibility Studio by Aldrin Rey N. Taberara</title>
 <meta name="description" content="ACreates helps new businesses in the Philippines look credible and get found online with a consistent brand, a Google Business Profile, basic SEO and a 30-day content plan.">
+<link rel="canonical" href="https://acreates.netlify.app/">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta property="og:title" content="ACreates | Brand + Visibility Studio by Aldrin Rey N. Taberara">
+<meta property="og:description" content="ACreates helps new businesses in the Philippines look credible and get found online with a consistent brand, a Google Business Profile, basic SEO and a 30-day content plan.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://acreates.netlify.app/">
+<meta property="og:image" content="/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"ACreates",
+  "description":"ACreates helps new businesses in the Philippines look credible and get found online with a consistent brand, a Google Business Profile, basic SEO and a 30-day content plan.",
+  "url":"https://acreates.netlify.app/",
+  "email":"aldrinrey.workcontact@gmail.com",
+  "areaServed":"Philippines"
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -45,7 +64,14 @@ nav{display:flex;gap:22px;font:600 .92rem var(--body)}
 nav a{text-decoration:none;color:var(--muted)}
 nav a:hover{color:var(--fg)}
 nav a.cta{color:var(--fg);border-bottom:2px solid var(--accent)}
-@media (max-width:720px){nav a:not(.cta){display:none}}
+.menu-toggle{display:none}
+@media (max-width:720px){
+  .menu-toggle{display:inline-flex;width:44px;height:44px;padding:9px;flex-direction:column;justify-content:center;gap:5px;background:transparent;border:2px solid var(--fg);border-radius:8px;color:var(--fg);cursor:pointer}
+  .menu-toggle span{display:block;height:2px;background:currentColor;border-radius:2px}
+  nav{display:none;position:absolute;top:calc(64px + env(safe-area-inset-top,0px));left:0;right:0;padding:12px 20px 20px;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line)}
+  nav.is-open{display:flex}
+  nav a,nav a:not(.cta){display:block;padding:12px 0}
+}
 /* buttons */
 .btn{display:inline-block;padding:14px 24px;border-radius:10px;font:600 .98rem var(--body);text-decoration:none;border:2px solid var(--fg)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
@@ -125,8 +151,9 @@ footer span.tg{color:#B9B0AA}
 <body>
 <header>
   <div class="wrap bar">
-    <a class="brand" href="#top" aria-label="ACreates home"><span class="mark" aria-hidden="true">AC</span>ACreates</a>
-    <nav aria-label="Main">
+    <a class="brand" href="#top" aria-label="ACreates"><span class="mark" aria-hidden="true">AC</span><span>ACreates</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+    <nav id="main-nav" aria-label="Main">
       <a href="#about">About</a><a href="#achievements">Achievements</a><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a class="cta" href="#contact">Contact</a>
     </nav>
   </div>
@@ -142,7 +169,7 @@ footer span.tg{color:#B9B0AA}
       <a class="btn primary" href="#work">View my work</a>
       <a class="btn ghost" href="#services">Explore my services</a>
     </div>
-    <p class="note">Clear plan, fair timeline, honest reporting. No ranking guarantees.</p>
+    <p class="note">Clear plan, fair timeline, honest reporting. No ranking guarantees. [City/Region] | [Availability, e.g. Taking 2 new projects this month]</p>
   </div>
 </section>
 
@@ -161,9 +188,9 @@ footer span.tg{color:#B9B0AA}
   <div class="wrap">
     <div class="sec-head"><h2>Achievements</h2><p class="muted">Milestones that shape how I work.</p></div>
     <div class="achievement-grid">
-      <article class="achievement-panel"><img class="achievement-image" src="rscene-achievement.png" alt="RScene team receiving a second-place hackathon award"><span class="achievement-number">01</span><div><h3>RScene hackathon</h3><p>Placed 2nd out of 11 teams with the RScene team.</p></div></article>
-      <article class="achievement-panel"><img class="achievement-image" src="byteforward-achievement.jpg" alt="Byte Forward and PCCI competition award ceremony"><span class="achievement-number">02</span><div><h3>Byte Forward x PCCI</h3><p>Placed 3rd out of 12 teams in last year's Byte Forward competition with PCCI.</p></div></article>
-      <article class="achievement-panel"><span class="achievement-number">03</span><div><h3>4th year student</h3><p>Continuing to sharpen my design, communication and problem-solving skills at Eastern Visayas State University.</p></div></article>
+      <article class="achievement-panel"><img class="achievement-image" src="rscene-achievement.png" width="567" height="496" loading="lazy" decoding="async" alt="RScene team receiving a second-place hackathon award"><span class="achievement-number">01</span><div><h3>RScene hackathon</h3><p>Placed 2nd out of 11 teams with the RScene team.</p></div></article>
+      <article class="achievement-panel"><img class="achievement-image" src="byteforward-achievement.jpg" width="1600" height="1200" loading="lazy" decoding="async" alt="Byte Forward and PCCI competition award ceremony"><span class="achievement-number">02</span><div><h3>Byte Forward x PCCI</h3><p>Placed 3rd out of 12 teams in last year's Byte Forward competition with PCCI.</p></div></article>
+      <article class="achievement-panel"><span class="achievement-number">03</span><div><h3>[Skill, tool or project]</h3><p>[One sentence about it]</p></div></article>
     </div>
   </div>
 </section>
@@ -234,5 +261,27 @@ footer span.tg{color:#B9B0AA}
     <div>&copy; 2026 Aldrin Rey N. Taberara. <a href="mailto:aldrinrey.workcontact@gmail.com">Email</a></div>
   </div>
 </footer>
+<script>
+const menuButton = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('#main-nav');
+
+function closeMenu(){
+  menuButton.setAttribute('aria-expanded','false');
+  menuButton.setAttribute('aria-label','Open menu');
+  mainNav.classList.remove('is-open');
+}
+
+menuButton.addEventListener('click', () => {
+  const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+  menuButton.setAttribute('aria-expanded', String(!isOpen));
+  menuButton.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+  mainNav.classList.toggle('is-open', !isOpen);
+});
+
+mainNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+document.addEventListener('keydown', event => {
+  if(event.key === 'Escape') closeMenu();
+});
+</script>
 </body>
 </html>

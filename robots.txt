@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://acreates.netlify.app/sitemap.xml
