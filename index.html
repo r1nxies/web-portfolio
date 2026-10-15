@@ -83,6 +83,8 @@ nav a.cta{color:var(--fg);border-bottom:2px solid var(--accent)}
 .hero h1 span{color:var(--accent)}
 .hero p.lead{font-size:1.2rem;margin-top:28px}
 .hero .note{font-size:.92rem;color:var(--muted);margin-top:18px}
+.proof{margin-top:18px;font:600 .95rem var(--body)}
+.proof a{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
 /* about */
 .about .grid{display:grid;gap:32px;grid-template-columns:1fr}
 @media (min-width:820px){.about .grid{grid-template-columns:5fr 7fr;gap:64px}}
@@ -108,6 +110,16 @@ nav a.cta{color:var(--fg);border-bottom:2px solid var(--accent)}
 .svc p{margin:0;color:var(--muted)}
 .svc .how{color:var(--fg)}
 .sec-head{margin-bottom:40px;display:grid;gap:14px}
+/* offer */
+.offer{border-top:1px solid var(--line);background:var(--surface)}
+.offer-box{border:2px solid var(--fg);border-radius:14px;padding:28px;display:grid;gap:24px}
+.offer-box h3{font-size:1.35rem}
+.offer-list{margin:0;padding-left:1.2rem;display:grid;gap:8px}
+.offer-details{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:700px){.offer-details{grid-template-columns:repeat(3,1fr)}}
+.offer-detail{border-top:3px solid var(--accent);padding-top:12px}
+.offer-detail strong{display:block;font-family:var(--head);font-size:1.05rem}
+.offer-box .btn{justify-self:start}
 /* why */
 .why{background:var(--surface)}
 .cols{display:grid;gap:32px;grid-template-columns:1fr}
@@ -124,6 +136,10 @@ nav a.cta{color:var(--fg);border-bottom:2px solid var(--accent)}
 .t3{border:2px dashed var(--muted)}
 .tile p{margin:8px 0 0;font-size:.95rem}
 .t3 p{color:var(--muted)}
+.tile-placeholder{min-height:150px;border:2px dashed currentColor;border-radius:10px;display:grid;place-items:center;text-align:center;font:600 1rem var(--body);opacity:.8}
+.case-study{display:grid;gap:7px;margin-top:12px}
+.case-study p{margin:0}
+.achievement-meta{margin-top:12px!important;color:var(--muted)!important;font-size:.85rem!important}
 /* process */
 .steps{list-style:none;margin:0;padding:0;display:grid;gap:0}
 .steps li{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:22px 0;border-top:1px solid var(--line)}
@@ -154,7 +170,7 @@ footer span.tg{color:#B9B0AA}
     <a class="brand" href="#top" aria-label="ACreates"><span class="mark" aria-hidden="true">AC</span><span>ACreates</span></a>
     <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
     <nav id="main-nav" aria-label="Main">
-      <a href="#about">About</a><a href="#achievements">Achievements</a><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a class="cta" href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#achievements">Achievements</a><a href="#services">Services</a><a href="#offer">Offer</a><a href="#work">Work</a><a href="#process">Process</a><a class="cta" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -162,14 +178,14 @@ footer span.tg{color:#B9B0AA}
 <main id="top">
 <section class="hero">
   <div class="wrap">
-    <p class="role"> UI/UX Designer | SEO | Canva &amp; ChatGPT/Claude Expert</p>
+    <p class="role">[Type one role line here, e.g. Brand &amp; SEO Freelancer | Canva &amp; AI-assisted Content]</p>
     <h1>Look credible. <span>Get found.</span></h1>
     <p class="lead">ACreates is a brand and visibility studio for new businesses in the Philippines. You get a consistent look, a complete Google profile and a clear plan for being found online.</p>
     <div class="actions">
       <a class="btn primary" href="#work">View my work</a>
       <a class="btn ghost" href="#services">Explore my services</a>
     </div>
-    <p class="note">Clear plan, fair timeline, honest reporting. No ranking guarantees. [City/Region] | [Availability, e.g. Taking 2 new projects this month]</p>
+    <p class="proof"><a href="#achievements">2nd place, RScene hackathon | 3rd place, Byte Forward x PCCI</a></p>
   </div>
 </section>
 
@@ -188,8 +204,8 @@ footer span.tg{color:#B9B0AA}
   <div class="wrap">
     <div class="sec-head"><h2>Achievements</h2><p class="muted">Milestones that shape how I work.</p></div>
     <div class="achievement-grid">
-      <article class="achievement-panel"><img class="achievement-image" src="rscene-achievement.png" width="567" height="496" loading="lazy" decoding="async" alt="RScene team receiving a second-place hackathon award"><span class="achievement-number">01</span><div><h3>RScene hackathon</h3><p>Placed 2nd out of 11 teams with the RScene team.</p></div></article>
-      <article class="achievement-panel"><img class="achievement-image" src="byteforward-achievement.jpg" width="1600" height="1200" loading="lazy" decoding="async" alt="Byte Forward and PCCI competition award ceremony"><span class="achievement-number">02</span><div><h3>Byte Forward x PCCI</h3><p>Placed 3rd out of 12 teams in last year's Byte Forward competition with PCCI.</p></div></article>
+      <article class="achievement-panel"><img class="achievement-image" src="rscene-achievement.png" width="567" height="496" loading="lazy" decoding="async" alt="RScene team receiving a second-place hackathon award"><span class="achievement-number">01</span><div><h3>RScene hackathon</h3><p>Placed 2nd out of 11 teams with the RScene team.</p><p class="achievement-meta">Year: [year]</p></div></article>
+      <article class="achievement-panel"><img class="achievement-image" src="byteforward-achievement.jpg" width="1600" height="1200" loading="lazy" decoding="async" alt="Byte Forward and PCCI competition award ceremony"><span class="achievement-number">02</span><div><h3>Byte Forward x PCCI</h3><p>Placed 3rd out of 12 teams in the Byte Forward competition with PCCI.</p><p class="achievement-meta">Year: [year]</p></div></article>
       <article class="achievement-panel"><span class="achievement-number">03</span><div><h3>[Skill, tool or project]</h3><p>[One sentence about it]</p></div></article>
     </div>
   </div>
@@ -203,6 +219,34 @@ footer span.tg{color:#B9B0AA}
     <div class="svc"><h3>Basic website SEO</h3><p>Page titles, descriptions, structure and keyword basics.</p><p class="how">Your site gives search engines clear signals about what you offer.</p></div>
     <div class="svc"><h3>Posters and pitch decks</h3><p>Event posters and presentation decks in your brand style.</p><p class="how">Launches and pitches look prepared and professional.</p></div>
     <div class="svc"><h3>Short videos and reels</h3><p>Editing in CapCut with your colors, fonts and captions.</p><p class="how">Short clips that match the rest of your brand.</p></div>
+  </div>
+</section>
+
+<section class="offer" id="offer">
+  <div class="wrap">
+    <div class="sec-head"><h2>The Launch Visibility Pack</h2><p class="muted">A focused starting point for businesses building their presence.</p></div>
+    <div class="offer-box">
+      <div>
+        <h3>Who it's for</h3>
+        <p>New and small businesses, local shops, startups, freelancers and student-run ventures.</p>
+      </div>
+      <div>
+        <h3>What's included</h3>
+        <ul class="offer-list">
+          <li>Logo and social media kit in Canva</li>
+          <li>Google Business Profile setup</li>
+          <li>Basic website SEO</li>
+          <li>30-day content plan</li>
+        </ul>
+      </div>
+      <div class="offer-details">
+        <div class="offer-detail"><strong>Timeline</strong><span>[weeks]</span></div>
+        <div class="offer-detail"><strong>Price</strong><span>[Price: ask for a quote]</span></div>
+        <div class="offer-detail"><strong>Revisions</strong><span>[number]</span></div>
+      </div>
+      <p class="muted">SEO takes time. You get a clear plan and honest reports, not guaranteed rankings.</p>
+      <a class="btn primary" href="#contact">Ask about the pack</a>
+    </div>
   </div>
 </section>
 
@@ -221,9 +265,10 @@ footer span.tg{color:#B9B0AA}
   <div class="wrap">
     <div class="sec-head"><h2>Sample work</h2><p class="muted">These are practice projects I made to show my process. They are not client work.</p></div>
     <div class="tiles">
-      <article class="tile t1"><span class="tag">Practice sample</span><div><h3>Launch Visibility Pack mockup</h3><p>A sample promo post and service flyer for a fictional new business. </p></div></article>
-      <article class="tile t2"><span class="tag">Practice sample</span><div><h3>Event poster</h3><p>A sample poster for a fictional student event. </p></div></article>
-      <article class="tile t3"><span class="tag">Coming soon</span><div><h3>Google Business Profile setup</h3><p>Before-and-after sample .</p></div></article>
+      <article class="tile t1"><span class="tag">Practice sample</span><div><div class="tile-placeholder">[Add image]</div><h3>Launch Visibility Pack mockup</h3><p>A sample promo post and service flyer for a fictional new business.</p></div></article>
+      <article class="tile t2"><span class="tag">Practice sample</span><div><div class="tile-placeholder">[Add image]</div><h3>Event poster</h3><p>A sample poster for a fictional student event.</p></div></article>
+      <article class="tile t3"><span class="tag">Practice sample</span><div><div class="tile-placeholder">[Add image]</div><h3>Google Business Profile setup</h3></div></article>
+      <article class="tile t3"><span class="tag">Hackathon project</span><div><h3>Hackathon project</h3><div class="case-study"><p><strong>Problem:</strong> [Problem]</p><p><strong>My role:</strong> [My role]</p><p><strong>What we built:</strong> [What we built]</p><p><strong>Result:</strong> [Result]</p></div></div></article>
     </div>
   </div>
 </section>
